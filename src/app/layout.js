@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
-
+import { AudioProvider } from "@/components/AudioContext";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -21,9 +21,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={` bg-black text-white ${geistSans.variable} ${geistMono.variable} antialiased  `}
       >
-        {children}
+        <AudioProvider>{children}</AudioProvider>
       </body>
     </html>
   );
