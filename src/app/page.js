@@ -1,9 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Vintage from "../../public/VINTAGE.jpg";
-import { MdAdsClick } from "react-icons/md";
-import ZeusLogo from "../../public/ZeusLogo.jpeg";
+
 import { TbHandClick } from "react-icons/tb";
 import Link from "next/link";
 import { useAudio } from "@/components/AudioContext";
@@ -23,7 +21,7 @@ export default function Home() {
             <Link href="/Home" onClick={playmusic}>
               {" "}
               <Image
-                src={Vintage}
+                src="/VINTAGE.jpg"
                 height={500}
                 width={500}
                 className="h-full w-full"
@@ -38,7 +36,7 @@ export default function Home() {
           >
             <Link href="/Home" onClick={playmusic}>
               <Image
-                src={ZeusLogo}
+                src="/ZeusLogo.jpeg"
                 height={500}
                 width={500}
                 className="h-full w-full"

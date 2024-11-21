@@ -8,24 +8,6 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaSquareGithub } from "react-icons/fa6";
 import { IoLogoDiscord } from "react-icons/io5";
 
-import Innovation from "../../../public/Innovation.png";
-
-import Transparency from "../../../public/transparency.png";
-
-import Security from "../../../public/security.png";
-
-import Community from "../../../public/community.png";
-
-import ZeusLogo from "../../../public/ZeusLogo.jpeg";
-
-import meme from "../../../public/meme.png";
-import meme1 from "../../../public/meme1.png";
-import meme2 from "../../../public/meme2.png";
-import meme3 from "../../../public/meme3.png";
-import meme4 from "../../../public/meme4.png";
-import Apollo from "../../../public/Apollo.jpg";
-
-import scan from "../../../public/scan.jpg";
 import { GrFormPrevious } from "react-icons/gr";
 
 import { FaExternalLinkAlt } from "react-icons/fa";
@@ -58,11 +40,11 @@ const page = () => {
   }, [audioElement, toggleAudio]);
 
   const memes = [
-    { id: 1, image: meme },
-    { id: 2, image: meme1 },
-    { id: 3, image: meme2 },
-    { id: 4, image: meme3 },
-    { id: 5, image: meme4 },
+    { id: 1, image: "/meme.png" },
+    { id: 2, image: "/meme1.png" },
+    { id: 3, image: "/meme2.png" },
+    { id: 4, image: "/meme3.png" },
+    { id: 5, image: "/meme4.png" },
   ];
 
   const Threads = [
@@ -227,7 +209,7 @@ const page = () => {
           <div className="flex px-5 flex-col space-y-10 pt-5 pb-20 shadow-lg macbook13:max-w-2xl shadow-white max-w-md justify-center items-center">
             <div className="w-20 h-20 rounded-full overflow-hidden macbook13:w-24 macbook13:h-24">
               <Image
-                src={Innovation}
+                src="/innovation.png"
                 height={500}
                 width={500}
                 className="h-full w-full"
@@ -246,7 +228,7 @@ const page = () => {
           <div className="flex px-5 flex-col macbook13:max-w-2xl space-y-10 pt-5 pb-20 shadow-lg shadow-white max-w-md justify-center macbook13:space-y-20  items-center">
             <div className="w-20 h-20 macbook13:w-24 macbook13:h-24 rounded-full overflow-hidden">
               <Image
-                src={Transparency}
+                src="/transparency.png"
                 height={500}
                 width={500}
                 className="h-full w-full"
@@ -267,7 +249,7 @@ const page = () => {
           <div className="flex px-5 flex-col space-y-10 pt-5 pb-20 shadow-lg shadow-white max-w-md justify-center items-center macbook13:max-w-2xl">
             <div className="w-20 h-20 rounded-full overflow-hidden macbook13:w-24 macbook13:h-24">
               <Image
-                src={Community}
+                src="/community.png"
                 height={500}
                 width={500}
                 className="h-full w-full"
@@ -286,7 +268,7 @@ const page = () => {
           <div className="flex  px-5 flex-col space-y-10 macbook13:space-y-20 pt-5 pb-20 shadow-lg shadow-white max-w-md macbook13:max-w-2xl justify-center items-center">
             <div className="w-20 h-20 rounded-full overflow-hidden macbook13:w-24 macbook13:h-24">
               <Image
-                src={Security}
+                src="/security.png"
                 height={500}
                 width={500}
                 className="h-full w-full"
@@ -323,7 +305,7 @@ const page = () => {
               <div className="absolute h-40  w-40 macbook13:w-52 macbook13:h-52 rounded-full bg-blue-700 border-[6px] border-black left-10 -bottom-14">
                 <div className="bg-yellow-400 h-full w-full rounded-full relative ">
                   <Image
-                    src={VINTAGE_JAB}
+                    src="/VINTAGE.jpg"
                     height={500}
                     width={500}
                     className="h-full w-full rounded-full"
@@ -434,7 +416,7 @@ const page = () => {
                   >
                     <div className="h-20 w-20 macbook13:h-40 macbook13:w-40">
                       <Image
-                        src={ZeusLogo}
+                        src="/ZeusLogo.jpeg"
                         height={500}
                         width={500}
                         className="h-full w-full"
@@ -502,7 +484,7 @@ const page = () => {
                 transition={{ duration: 2 }} // Adjust based on in-view status
               >
                 <Image
-                  src={ZeusLogo}
+                  src="/ZeusLogo.jpeg"
                   height={500}
                   width={500}
                   className="h-full w-full"
@@ -539,7 +521,7 @@ const page = () => {
                 transition={{ duration: 2, delay: 0.5 }}
               >
                 <Image
-                  src={Apollo}
+                  src="/Apollo.jpg"
                   height={500}
                   width={500}
                   className="h-full w-full"
@@ -577,7 +559,7 @@ const page = () => {
                 transition={{ duration: 2, delay: 0.8 }}
               >
                 <Image
-                  src={scan}
+                  src="/scan.jpg"
                   height={500}
                   width={500}
                   className="h-full w-full"
